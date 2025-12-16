@@ -1,0 +1,10 @@
+
+//DELETE  http://localhost:3001/api/notes/4
+//GET  http://localhost:3001/api/notes/
+POST  http://localhost:3001/api/persons/
+Content-Type: application/json
+
+{
+  "name": "novelty",
+  "number": "123456"
+}
