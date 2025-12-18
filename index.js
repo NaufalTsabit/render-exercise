@@ -65,7 +65,7 @@ app.delete('/api/persons/:id', (req, res, next) => {
     .catch(error => next(error))
 })
 
-const update = app.put('/api/persons/:id', (req, res) => {
+const update = app.put('/api/persons/:id', (req, res, next) => {
   const {name, number} = req.body
   Person.findById(req.params.id)
     .then(p => {
